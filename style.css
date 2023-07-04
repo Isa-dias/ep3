@@ -1,5 +1,26 @@
+header{
+    grid-area: cab;
+    background-color: aqua;
+}
+aside{
+    grid-area: sec;
+    background-color: blueviolet;
+}
+main{
+    grid-area: pri;
+    background-color: brown;
+}
+footer{
+    grid-area: rod;
+    background-color: aquamarine;
+}
+
+header, aside, main, footer{
+    background-color: rgba(114, 111, 111, 0.7);
+}
+
 body{
-    background-color: black;
+    background-color: rgb(105, 105, 105);
     background-image: url(fundo.img);
     display: grid;
     grid-template-areas: 
@@ -8,22 +29,26 @@ body{
         "rod rod rod";
     grid-gap: 5px;
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto 1000px auto;
+    grid-template-rows: auto auto auto;
 }
-
-header{
-    grid-area: cab;
+.box_mae{
+    border: red 2px solid;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-aside{
-    grid-area: sec;
+.card{
+    width: 300px ;
+    height: 450px;
+    border: green 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
-main{
-    grid-area: pri;
-}
-footer{
-    grid-area: rod;
-}
-
-header, aside, main, footer{
-    background-color: rgba(43, 40, 40, 0.7);
+.card img{
+    width: 200px;
 }
