@@ -1,6 +1,9 @@
 header{
     grid-area: cab;
     background-color: aqua;
+    background-image: url(fundo.img);
+    display: grid;
+    grid-gap: 5px;
 }
 aside{
     grid-area: sec;
